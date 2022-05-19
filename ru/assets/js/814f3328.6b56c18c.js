@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgitlocalize_com=self.webpackChunkgitlocalize_com||[]).push([[631],{5641:function(i){i.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Introducing GitLocalize, a continuous localization platform for GitHub repository","permalink":"/ru/blog/introducing-gitlocalize"}]}')}}]);

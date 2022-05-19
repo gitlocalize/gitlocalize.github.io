@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://gitlocalize.com/blog</id>
+    <title>GitLocalize Blog</title>
+    <updated>2017-05-12T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://gitlocalize.com/blog"/>
+    <subtitle>GitLocalize Blog</subtitle>
+    <icon>https://gitlocalize.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Introducing GitLocalize, a continuous localization platform for GitHub repository]]></title>
+        <id>introducing-gitlocalize</id>
+        <link href="https://gitlocalize.com/blog/introducing-gitlocalize"/>
+        <updated>2017-05-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are excited to announce the beta launch of our new localization platform, GitLocalize!]]></summary>
+        <content type="html"><![CDATA[<p>We are excited to announce the beta launch of our new localization platform, <a href="https://gitlocalize.com" target="_blank" rel="noopener noreferrer">GitLocalize</a>!</p>]]></content>
+        <author>
+            <name>Ryo Chikazawa</name>
+            <uri>https://github.com/chikathreesix</uri>
+        </author>
+    </entry>
+</feed>

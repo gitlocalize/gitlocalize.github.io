@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>GitLocalize Blog</title>
+        <link>https://gitlocalize.com/ja/blog</link>
+        <description>GitLocalize Blog</description>
+        <lastBuildDate>Fri, 12 May 2017 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <item>
+            <title><![CDATA[Introducing GitLocalize, a continuous localization platform for GitHub repository]]></title>
+            <link>https://gitlocalize.com/ja/blog/introducing-gitlocalize</link>
+            <guid>introducing-gitlocalize</guid>
+            <pubDate>Fri, 12 May 2017 00:00:00 GMT</pubDate>
+            <description><![CDATA[We are excited to announce the beta launch of our new localization platform, GitLocalize!]]></description>
+            <content:encoded><![CDATA[<p>We are excited to announce the beta launch of our new localization platform, <a href="https://gitlocalize.com" target="_blank" rel="noopener noreferrer">GitLocalize</a>!</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

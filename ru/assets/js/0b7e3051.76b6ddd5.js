@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgitlocalize_com=self.webpackChunkgitlocalize_com||[]).push([[408],{3769:function(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);

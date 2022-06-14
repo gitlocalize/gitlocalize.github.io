@@ -73,7 +73,7 @@
 
 .navigation__link {
     color: #FFFFFF;
-    font-family: "Source Sans Pro Regular";
+    font-family: "Source Sans Pro";
     font-size: 16px;
     letter-spacing: -0.04px;
     line-height: 20px;
@@ -181,8 +181,8 @@
 
     padding: 34px 36px 42px 39px;
 
-    margin-right: 97px;
-    margin-bottom: 40px;
+    /*margin-right: 97px;*/
+    /*margin-bottom: 40px;*/
 }
 .repository__img {
     height: 530px;
@@ -262,8 +262,8 @@
     box-shadow: 0 54px 24px -39px #0A0F2D;
 
     padding: 31px 24px 39px 26px;
-    margin-top: 54px;
-    margin-bottom: 40px;
+    /*margin-top: 54px;*/
+    /*margin-bottom: 40px;*/
 }
 .parsing__app-img {
     height: 471px;
@@ -300,8 +300,8 @@
 
     padding: 27px 53px 26px 54px;
 
-    margin-right: 97px;
-    margin-bottom: 40px;
+    /*margin-right: 97px;*/
+    /*margin-bottom: 40px;*/
 }
 .teamwork__app-img {
     height: 553px;

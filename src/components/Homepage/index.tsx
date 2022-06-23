@@ -56,7 +56,7 @@ export default function Homepage(): JSX.Element {
                 </div>
             </div>
 
-            <div className="homepage__container repository">
+            <div className="homepage__container repository" id="repository">
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex flex-l-5 flex-m-6">
                         <div className="repository__img-container">
@@ -72,7 +72,7 @@ export default function Homepage(): JSX.Element {
                 </div>
             </div>
 
-            <div className="homepage__container parsing">
+            <div className="homepage__container parsing" id="parsing">
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex flex-l-10 flex-m-10">
                         <div className="parsing__img"/>
@@ -86,7 +86,7 @@ export default function Homepage(): JSX.Element {
                 </div>
             </div>
 
-            <div className="homepage__container teamwork">
+            <div className="homepage__container teamwork" id="teamwork">
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex flex-l-5 flex-m-6">
                         <div className="teamwork__app-img-container">
@@ -101,7 +101,7 @@ export default function Homepage(): JSX.Element {
                 </div>
             </div>
 
-            <div className="homepage__container projects">
+            <div className="homepage__container projects" id="projects">
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex flex-l-10 flex-m-10 flex-s-10">
                         <div className="projects__title">Projects Already Using GitLocalize</div>
@@ -111,7 +111,7 @@ export default function Homepage(): JSX.Element {
 
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex">
-                        <div className="project">
+                        <div className="project" id="google">
                             <div className="project__side">
                                 <div className="project__img google_img"/>
                                 <div className="project__title">Google Web Fundamentals</div>
@@ -125,7 +125,7 @@ export default function Homepage(): JSX.Element {
                     </div>
 
                     <div className="homepage__flex">
-                        <div className="project">
+                        <div className="project" id="vue">
                             <div className="project__side">
                                 <div className="project__img vue_img"/>
                                 <div className="project__title">Vue.js</div>
@@ -139,7 +139,7 @@ export default function Homepage(): JSX.Element {
                     </div>
 
                     <div className="homepage__flex">
-                        <div className="project">
+                        <div className="project" id="nuxt">
                             <div className="project__side">
                                 <div className="project__img nuxt_img"/>
                                 <div className="project__title">Nuxt.js</div>
@@ -154,7 +154,7 @@ export default function Homepage(): JSX.Element {
                 </div>
             </div>
 
-            <div className="homepage__container review">
+            <div className="homepage__container review" id="review">
                 <div className="homepage__container--adaptive">
                     <div className="review__info homepage__flex">
                         <div className="review__info-side flex-l-2 flex-m-3">
@@ -176,18 +176,21 @@ export default function Homepage(): JSX.Element {
                 </div>
             </div>
 
-            <div className="homepage__container advantages">
+            <div className="homepage__container advantages" id="advantages">
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex flex-l-10 flex-m-10">
                         <div className="advantages__title">How It Works</div>
                         <div className="advantages__description">A better process to translate products, documentation or websites better process
                             to translate products, documentation or websites</div>
-                        <div className="advantages__video"/>
+                        <div className="advantages__video">
+                            <iframe width="1120" height="630" src="https://www.youtube.com/embed/PoSjHoEWV3w" frameBorder="0"
+                                    allowFullScreen/>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className="homepage__container enjoy">
+            <div className="homepage__container enjoy" id="enjoy">
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex flex-l-10 flex-m-10 flex-s-10">
                         <div className="enjoy__title">Enjoy a Better Procees of Localization</div>
@@ -208,30 +211,30 @@ export default function Homepage(): JSX.Element {
                                 <div className="footer__menu footer__features">
                                     <div className="footer__menu-title">Features</div>
                                     <div className="footer__menu-items">
-                                        <div className="footer__menu-item">Sync with Repository</div>
-                                        <div className="footer__menu-item">Parsing & Segmentation</div>
-                                        <div className="footer__menu-item">Teamwork</div>
+                                        <a className="footer__menu-item" href="#repository">Sync with Repository</a>
+                                        <a className="footer__menu-item" href="#parsing">Parsing & Segmentation</a>
+                                        <a className="footer__menu-item" href="#teamwork">Teamwork</a>
                                     </div>
                                 </div>
                                 <div className="footer__menu footer__projects">
                                     <div className="footer__menu-title">Contribute to Projects</div>
                                     <div className="footer__menu-items">
-                                        <div className="footer__menu-item">Google Web Fundamentals</div>
-                                        <div className="footer__menu-item">Vue.js</div>
-                                        <div className="footer__menu-item">Nuxt.js</div>
+                                        <a className="footer__menu-item" href="#google">Google Web Fundamentals</a>
+                                        <a className="footer__menu-item" href="#vue">Vue.js</a>
+                                        <a className="footer__menu-item" href="#nuxt">Nuxt.js</a>
                                     </div>
                                 </div>
                                 <div className="footer__menu footer__company">
                                     <div className="footer__menu-title">Company</div>
                                     <div className="footer__menu-items">
-                                        <div className="footer__menu-item">About Us</div>
-                                        <div className="footer__menu-item">Terms of Service</div>
-                                        <div className="footer__menu-item">Privacy Policy</div>
+                                        <a className="footer__menu-item" href="#about">About Us</a>
+                                        <a className="footer__menu-item" href="#terms">Terms of Service</a>
+                                        <a className="footer__menu-item" href="#privacy">Privacy Policy</a>
                                     </div>
 
                                     <div className="footer__menu-items">
-                                        <div className="footer__menu-item">Community Chat</div>
-                                        <div className="footer__menu-item">Contact Us</div>
+                                        <a className="footer__menu-item" href="#chat">Community Chat</a>
+                                        <a className="footer__menu-item" href="#contact">Contact Us</a>
                                     </div>
                                 </div>
                             </div>
@@ -240,8 +243,9 @@ export default function Homepage(): JSX.Element {
                 </div>
 
                 <div className="homepage__container--adaptive">
-                    <div className="homepage__flex">
-                        <div className="social"/>
+                    <div className="homepage__flex social">
+                        <div className="facebook"/>
+                        <div className="twitter"/>
                     </div>
                     <div className="homepage__flex">
                         <div className="copyright">© 2019 All rights reserved</div>

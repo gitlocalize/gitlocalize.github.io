@@ -1,4 +1,8 @@
 /*root css*/
+* {
+    scroll-behavior: smooth;
+}
+
 .homepage {
     display: flex;
     flex-direction: column;
@@ -47,7 +51,7 @@
 .logo {
     height: 28px;
     min-width: 175px;
-    background: url("../../css/imgs/logo.png") no-repeat;
+    background: url("../../css/task/logo.png") no-repeat;
     margin: 19px 55px 17px 0;
 }
 
@@ -128,7 +132,7 @@
     align-self: flex-end;
     height: 323px;
     width: 400px;
-    background: url("../../css/imgs/main.png") no-repeat;
+    background: url("../../css/task/main.png") no-repeat;
     background-size: cover;
     margin-top: 20px;
 }
@@ -160,7 +164,7 @@
     left: 0;
     bottom: 0;
     width: 57px;
-    background: url("../../css/icons/github-icon.png") center no-repeat;
+    background: url("../../css/task/github.svg") center no-repeat;
 }
 
 .demo-button {
@@ -213,7 +217,7 @@
     height: 530px;
     width: 480px;
 
-    background: url("../../css/imgs/add-repository.png") no-repeat;
+    background: url("../../css/task/add_repository.png") no-repeat;
 }
 .repository__sync {
     padding-top: 35px;
@@ -222,7 +226,7 @@
 .repository__sync-img {
     height: 88px;
     width: 98px;
-    background: url("../../css/imgs/octopus.png") no-repeat;
+    background: url("../../css/task/octopus.svg") no-repeat;
     margin-bottom: 27px;
 }
 .repository__sync-title {
@@ -256,7 +260,7 @@
     align-self: center;
     height: 98px;
     width: 72px;
-    background: url("../../css/imgs/cat.png") no-repeat;
+    background: url("../../css/task/cat.svg") no-repeat;
     margin-bottom: 19px;
 }
 .parsing__title {
@@ -299,7 +303,7 @@
     height: 471px;
     width: 841px;
 
-    background: url("../../css/imgs/parsing.png") no-repeat;
+    background: url("../../css/task/diff_management.png") no-repeat;
 }
 
 /*teamwork*/
@@ -335,7 +339,7 @@
     height: 553px;
     width: 448px;
 
-    background: url("../../css/imgs/teamwork.png") no-repeat;
+    background: url("../../css/task/pull_request.png") no-repeat;
 }
 .teamwork__info {
     padding-top: 25px;
@@ -345,7 +349,7 @@
     height: 114px;
     width: 114px;
 
-    background: url("../../css/imgs/cat-dog.png") no-repeat;
+    background: url("../../css/task/cat-and-dog.svg") no-repeat;
 
     margin-bottom: 25px;
 }
@@ -555,10 +559,7 @@
     margin-bottom: 84px;
 }
 .advantages__video {
-    box-sizing: border-box;
-    height: 630px;
-    border: 1px solid #979797;
-    background-color: #D8D8D8;
+
 }
 
 /*enjoy*/
@@ -623,7 +624,7 @@
 .logo__img {
     height: 32px;
     min-width: 175px;
-    background: url("../../css/imgs/logo.png") no-repeat;
+    background: url("../../css/task/logo.png") no-repeat;
 
     margin-bottom: 18px;
 }
@@ -662,6 +663,22 @@
     font-size: 14px;
     letter-spacing: -0.09px;
     line-height: 18px;
+    border: none !important;
+    text-decoration: none;
+    /*text-transform: none;*/
+}
+
+.footer__menu-item:hover {
+    color: #FFFFFF;
+    border: none !important;
+}
+
+.footer__menu-item:active {
+    border: none !important;
+}
+
+.footer__menu-item:focus {
+    border: none !important;
 }
 
 .footer__menu-item:not(:last-child) {
@@ -679,9 +696,19 @@
 }
 
 .social {
+    display: flex;
+    flex-direction: row;
+}
+
+.facebook {
     height: 35px;
-    width: 90px;
-    background: url("../../css/imgs/social.png") no-repeat;
+    width: 35px;
+    background: url("../../css/task/facebook.svg") no-repeat;
+}
+.twitter {
+    height: 35px;
+    width: 35px;
+    background: url("../../css/task/twitter.svg") no-repeat;
 }
 
 .copyright {

@@ -182,10 +182,8 @@ export default function Homepage(): JSX.Element {
                         <div className="advantages__title">How It Works</div>
                         <div className="advantages__description">A better process to translate products, documentation or websites better process
                             to translate products, documentation or websites</div>
-                        <div className="advantages__video">
-                            <iframe width="1120" height="630" src="https://www.youtube.com/embed/PoSjHoEWV3w" frameBorder="0"
-                                    allowFullScreen/>
-                        </div>
+                        <iframe className="advantages__video" src="https://www.youtube.com/embed/PoSjHoEWV3w" frameBorder="0"
+                                allowFullScreen/>
                     </div>
                 </div>
             </div>

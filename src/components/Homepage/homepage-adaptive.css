@@ -62,6 +62,12 @@
     .footer__container, .footer__menu-container {
         flex-direction: column;
     }
+
+    .advantages__video {
+        width: 100% !important;
+        max-width: 560px !important;
+        height: 315px !important;
+    }
 }
 @media screen and (min-width: 992px) {
     .homepage__container--adaptive {
@@ -106,6 +112,11 @@
 
     .review__info, .review__info-description {
         padding: 0;
+    }
+
+    .advantages__video {
+        width: 900px;
+        height: 506px;
     }
 }
 @media screen and (min-width: 1200px) {

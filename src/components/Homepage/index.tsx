@@ -4,6 +4,8 @@ import "@site/src/components/Homepage/homepage-adaptive.css";
 import styles from "@site/src/components/Homepage/homepage.module.css";
 import clsx from "clsx";
 import Button from "@site/src/shared/Button";
+import Select from "@site/src/shared/Select";
+import SelectItem from "@site/src/shared/Select/SelectItem";
 
 export default function Homepage(): JSX.Element {
     return (
@@ -24,7 +26,38 @@ export default function Homepage(): JSX.Element {
                         </div>
                     </div>
                     <div className="homepage__flex">
-                        <Button className="workspace-button">Your Workspace</Button>
+                        {/*<Button className="workspace-button">Your Workspace</Button>*/}
+
+
+                        <Select
+                            className='user-select'
+                            listClassName='user-select-list'
+                            title={(
+                                <React.Fragment>
+                                    <div className='user'/>
+                                    <div className='user-select-arrow' />
+                                </React.Fragment>
+                            )}
+                        >
+                            <SelectItem
+                                title={'Projects'}
+                                value={'Projects'}
+                                onSelectItem={(title, value) => {console.log('title, value', title, value);}}
+                            />
+                            <SelectItem
+                                title={'Profile'}
+                                value={'Profile'}
+                                onSelectItem={(title, value) => {console.log('title, value', title, value);}}
+                            />
+
+                            <SelectItem
+                                title={'Sign out'}
+                                value={'Sign out'}
+                                onSelectItem={(title, value) => {console.log('title, value', title, value);}}
+                            />
+                        </Select>
+
+
                     </div>
                 </div>
             </div>

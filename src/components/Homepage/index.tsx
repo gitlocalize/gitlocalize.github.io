@@ -276,8 +276,8 @@ export default function Homepage(): JSX.Element {
 
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex social">
-                        <div className="facebook"/>
-                        <div className="twitter"/>
+                        <Button className="facebook" href="https://www.facebook.com/gitlocalize">{''}</Button>
+                        <Button className="twitter" href="https://twitter.com/gitlocalize">{''}</Button>
                     </div>
                     <div className="homepage__flex">
                         <div className="copyright">© {new Date().getFullYear()} All rights reserved</div>

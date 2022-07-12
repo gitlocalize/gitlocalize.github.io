@@ -18,8 +18,8 @@ export default function Homepage(): JSX.Element {
                                 <a className="link" href="/"/>
                             </div>
                             <nav className="navigation">
-                                <a className="link navigation__link" href="/features">Features</a>
-                                <a className="link navigation__link" href="/projects">Projects</a>
+                                <a className="link navigation__link" href="#features">Features</a>
+                                <a className="link navigation__link" href="#projects">Projects</a>
                                 <a className="link navigation__link" href="/blog">Blog</a>
                                 <a className="link navigation__link" href="/docs">Docs</a>
                             </nav>
@@ -69,8 +69,8 @@ export default function Homepage(): JSX.Element {
                         <div className="main__description">A better process to translate products, {/*<br/>*/}
                             documentation or websites</div>
                         <div className="main__actions">
-                            <Button className="github-button">Get started with GitHub</Button>
-                            <Button className="demo-button">Watch a Demo</Button>
+                            <Button className="github-button" href="/auth">Get started with GitHub</Button>
+                            <Button className="demo-button" href="/demo">Watch a Demo</Button>
                         </div>
                     </div>
                     <div className="homepage__flex main__app-img-container flex-l-4 flex-m-5">
@@ -79,7 +79,7 @@ export default function Homepage(): JSX.Element {
                 </div>
             </div>
 
-            <div className="homepage__container features">
+            <div className="homepage__container features" id="features">
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex">
                         <div className="features__title">Features</div>
@@ -143,44 +143,45 @@ export default function Homepage(): JSX.Element {
                 </div>
 
                 <div className="homepage__container--adaptive">
-                    <div className="homepage__flex">
+                    <div className="homepage__flex flex-l-3 flex-m-3 flex-s-10">
                         <div className="project" id="google">
                             <div className="project__side">
                                 <div className="project__img google_img"/>
-                                <div className="project__title">Google Web Fundamentals</div>
-                                <div className="project__description">Best practices for modern web development</div>
-                                <div className="project__languages">17 Languages</div>
+                                <a className="project__title project__link" href="https://gitlocalize.com/google/WebFundamentals">GoogleChrome/web.dev</a>
+                                <div className="project__description">Building a better web</div>
+                                {/*<div className="project__languages">17 Languages</div>*/}
                             </div>
                             <div className="project__side project__arrow-container">
-                                <div className="project__arrow"/>
+                                <Button className="project__arrow" href="https://gitlocalize.com/google/WebFundamentals">{''}</Button>
                             </div>
                         </div>
                     </div>
 
-                    <div className="homepage__flex">
+                    <div className="homepage__flex flex-l-3 flex-m-3 flex-s-10">
                         <div className="project" id="vue">
                             <div className="project__side">
                                 <div className="project__img vue_img"/>
-                                <div className="project__title">Vue.js</div>
-                                <div className="project__description">Vue.js Server-Side Rendering Guide</div>
-                                <div className="project__languages">4 Languages</div>
+                                <a className="project__title project__link" href="https://gitlocalize.com/repo/2509">ruRust/rbe-gitlocalize</a>
+                                <div className="project__description">Rust by example</div>
+                                {/*<div className="project__languages">4 Languages</div>*/}
                             </div>
                             <div className="project__side project__arrow-container">
-                                <div className="project__arrow"/>
+                                <Button className="project__arrow" href="https://gitlocalize.com/repo/2509">{''}</Button>
                             </div>
                         </div>
                     </div>
 
-                    <div className="homepage__flex">
+                    <div className="homepage__flex flex-l-3 flex-m-3 flex-s-10">
                         <div className="project" id="nuxt">
                             <div className="project__side">
                                 <div className="project__img nuxt_img"/>
-                                <div className="project__title">Nuxt.js</div>
-                                <div className="project__description">Documentation of Nuxt.js</div>
-                                <div className="project__languages">12 Languages</div>
+                                <a className="project__title project__link" href="https://gitlocalize.com/repo/4592">tensorflow/docs-l10n</a>
+                                <div className="project__description">Tensorflow Documentation</div>
+                                {/*<div className="project__languages">12 Languages</div>*/}
                             </div>
                             <div className="project__side project__arrow-container">
-                                <div className="project__arrow"/>
+                                {/*<div className="project__arrow"/>*/}
+                                <Button className="project__arrow" href="https://gitlocalize.com/repo/4592">{''}</Button>
                             </div>
                         </div>
                     </div>
@@ -225,7 +226,7 @@ export default function Homepage(): JSX.Element {
                 <div className="homepage__container--adaptive">
                     <div className="homepage__flex flex-l-10 flex-m-10 flex-s-10">
                         <div className="enjoy__title">Enjoy a Better Procees of Localization</div>
-                        <Button className="github-button enjoy__button">Get started with GitHub</Button>
+                        <Button className="github-button enjoy__button" href="/auth">Get started with GitHub</Button>
                     </div>
                 </div>
             </div>
@@ -279,7 +280,7 @@ export default function Homepage(): JSX.Element {
                         <div className="twitter"/>
                     </div>
                     <div className="homepage__flex">
-                        <div className="copyright">© 2019 All rights reserved</div>
+                        <div className="copyright">© {new Date().getFullYear()} All rights reserved</div>
                     </div>
                 </div>
             </div>

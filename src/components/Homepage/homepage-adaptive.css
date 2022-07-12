@@ -59,6 +59,12 @@
         bottom: 0;
     }
 
+    .features:after, .review:after, .enjoy:after {
+        top: 0;
+        bottom: 0;
+        height: auto !important;
+    }
+
     .footer__container, .footer__menu-container {
         flex-direction: column;
     }

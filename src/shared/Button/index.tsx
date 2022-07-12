@@ -6,13 +6,14 @@ import clsx from "clsx";
 interface ButtonProps {
     children: string | JSX.Element[] | JSX.Element;
     className: string;
+    href: string;
 }
 
 export default function Button(props: ButtonProps): JSX.Element {
-    const {className, children} = props;
+    const {className, href = "", children} = props;
     const buttonClassName = clsx('button', className);
 
     return (
-        <div className={buttonClassName}>{children}</div>
+        <a className={buttonClassName} href={href}>{children}</a>
     );
 };

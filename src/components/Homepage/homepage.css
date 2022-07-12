@@ -183,15 +183,35 @@
 }
 
 .demo-button {
+    position: relative;
     margin-top: 10px;
-    padding: 15px 41px;
+
+    color: #333333;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 20px;
+
+    padding: 15px 21px 15px 51px;
     border: 1px solid rgba(151,151,151,0.36);
+}
+
+.demo-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 55px;
+    background: url("../../css/icons/play_circle.svg") center no-repeat;
+    background-size: 29px 29px;
 }
 
 /*features*/
 .features {
     position: relative;
-    padding-top: 135px;
+    margin-top: 66px;
+    padding-top: 69px;
 }
 
 .features:after {
@@ -458,11 +478,12 @@
     height: 94px;
     background-color: #9abcf2;
     margin-bottom: 25px;
+    background-size: 94px 94px !important;
 }
 
 .google_img {background: url("../../css/imgs/goggle.png") no-repeat;}
-.vue_img {background: url("../../css/imgs/vue.png") no-repeat;}
-.nuxt_img {background: url("../../css/imgs/nuxt.png") no-repeat;}
+.vue_img {background: url("../../css/imgs/rurust.png") no-repeat;}
+.nuxt_img {background: url("../../css/imgs/tensorflow.png") no-repeat;}
 
 .project__title {
     color: #333333;
@@ -472,7 +493,19 @@
     line-height: 32px;
 
     margin-bottom: 10px;
+
+
 }
+
+.project__link {
+    color: #333333;
+    cursor: pointer;
+}
+
+.project__link:hover {
+    color: #333333;
+}
+
 .project__description {
     color: #333333;
     font-family: "Source Sans Pro";
@@ -497,6 +530,7 @@
     width: 100%;
 }
 .project__arrow {
+    padding: 0;
     align-self: flex-end;
     height: 25px;
     width: 25px;
@@ -509,7 +543,8 @@
 /*review*/
 .review {
     position: relative;
-    padding-top: 155px;
+    margin-top: 17px;
+    padding-top: 138px;
 }
 
 .review:after {
@@ -611,7 +646,8 @@
 /*enjoy*/
 .enjoy {
     position: relative;
-    padding-top: 182px;
+    margin-top: 94px;
+    padding-top: 88px;
     padding-bottom: 85px;
 }
 
@@ -644,6 +680,8 @@
 
 /*footer*/
 .footer {
+    justify-content: space-between;
+    min-height: 531px;
     padding-top: 82px;
     background: linear-gradient(225.41deg, #3F0F40 0%, #0F274A 100%);
 }

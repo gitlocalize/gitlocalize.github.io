@@ -62,4 +62,5 @@
 .select-item:hover {
   background: linear-gradient(225.41deg, #3F0F40 0%, #0F274A 100%);
   color: white;
+  text-decoration: none;
 }

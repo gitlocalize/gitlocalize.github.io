@@ -95,8 +95,9 @@
 .user {
     width: 40px;
     height: 40px;
-    background: url(../../css/imgs/user.png) center center / 40px
-    no-repeat;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-right: 10px;
 }
 
@@ -154,9 +155,9 @@
 
 .main__actions {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: center;*/
     flex-wrap: wrap;
-    width: 413px;
+    /*width: 413px;*/
 }
 
 .github-button {
@@ -818,4 +819,44 @@
     letter-spacing: -0.09px;
     line-height: 18px;
     text-align: right;
+}
+
+.auth-button {
+    padding: 8px 16px;
+    padding-left: 37px;
+    margin: 15px 0;
+    align-self: flex-end;
+
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    color: #FFFFFF !important;
+    background-color: #444;
+    border-color: rgba(0,0,0,0.2);
+
+
+
+    display: block;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    user-select: none;
+}
+
+.auth-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 31px;
+    background: url("../../css/task/github-white.svg") center no-repeat;
+
+    border-right: 1px solid rgba(0,0,0,0.2);
 }

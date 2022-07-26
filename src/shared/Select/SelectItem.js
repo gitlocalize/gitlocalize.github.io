@@ -3,22 +3,23 @@ import PropTypes from 'prop-types'
 
 class SelectItem extends Component {
   handleOnClick = (e) => {
-    const { title, value, onSelectItem, onSelectClose } = this.props
-    e.preventDefault();
-    e.stopPropagation();
-    onSelectItem && onSelectItem(title, value)
+    const { title, onSelectItem, onSelectClose } = this.props
+    // e.preventDefault();
+    // e.stopPropagation();
+    onSelectItem && onSelectItem(title)
     onSelectClose();
   }
 
   render() {
-    const { title } = this.props
+    const { title, href } = this.props
     return (
-      <div
+      <a
         className='select-item'
+        href={href}
         onMouseDown={this.handleOnClick}
       >
         {title}
-      </div>
+      </a>
     )
   }
 }

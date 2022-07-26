@@ -20,8 +20,8 @@ export default function Homepage(): JSX.Element {
                             <nav className="navigation">
                                 <a className="link navigation__link" href="#features">Features</a>
                                 <a className="link navigation__link" href="#projects">Projects</a>
-                                <a className="link navigation__link" href="/blog">Blog</a>
-                                <a className="link navigation__link" href="/docs">Docs</a>
+                                <a className="link navigation__link" href="https://blog.gitlocalize.com/">Blog</a>
+                                <a className="link navigation__link" href="https://docs.gitlocalize.com/">Docs</a>
                             </nav>
                         </div>
                     </div>
@@ -51,8 +51,8 @@ export default function Homepage(): JSX.Element {
                             />
 
                             <SelectItem
-                                title={'Sign out'}
-                                value={'Sign out'}
+                                title={'Sign Out'}
+                                value={'Sign Out'}
                                 onSelectItem={(title, value) => {console.log('title, value', title, value);}}
                             />
                         </Select>
@@ -147,21 +147,21 @@ export default function Homepage(): JSX.Element {
                         <div className="project" id="google">
                             <div className="project__side">
                                 <div className="project__img google_img"/>
-                                <a className="project__title project__link" href="https://gitlocalize.com/google/WebFundamentals">GoogleChrome/web.dev</a>
+                                <a className="project__title project__link" href="https://gitlocalize.com/repo/6062">GoogleChrome/web.dev</a>
                                 <div className="project__description">Building a better web</div>
                                 {/*<div className="project__languages">17 Languages</div>*/}
                             </div>
                             <div className="project__side project__arrow-container">
-                                <Button className="project__arrow" href="https://gitlocalize.com/google/WebFundamentals">{''}</Button>
+                                <Button className="project__arrow" href="https://gitlocalize.com/repo/6062">{''}</Button>
                             </div>
                         </div>
                     </div>
 
                     <div className="homepage__flex flex-l-3 flex-m-3 flex-s-10">
-                        <div className="project" id="vue">
+                        <div className="project" id="rust">
                             <div className="project__side">
                                 <div className="project__img vue_img"/>
-                                <a className="project__title project__link" href="https://gitlocalize.com/repo/2509">ruRust/rbe-gitlocalize</a>
+                                <a className="project__title project__link" href="https://gitlocalize.com/repo/2509">rust-lang-ru/rust-by-example</a>
                                 <div className="project__description">Rust by example</div>
                                 {/*<div className="project__languages">4 Languages</div>*/}
                             </div>
@@ -172,7 +172,7 @@ export default function Homepage(): JSX.Element {
                     </div>
 
                     <div className="homepage__flex flex-l-3 flex-m-3 flex-s-10">
-                        <div className="project" id="nuxt">
+                        <div className="project" id="tensorflow">
                             <div className="project__side">
                                 <div className="project__img nuxt_img"/>
                                 <a className="project__title project__link" href="https://gitlocalize.com/repo/4592">tensorflow/docs-l10n</a>
@@ -251,22 +251,22 @@ export default function Homepage(): JSX.Element {
                                 <div className="footer__menu footer__projects">
                                     <div className="footer__menu-title">Contribute to Projects</div>
                                     <div className="footer__menu-items">
-                                        <a className="footer__menu-item" href="#google">Google Web Fundamentals</a>
-                                        <a className="footer__menu-item" href="#vue">Vue.js</a>
-                                        <a className="footer__menu-item" href="#nuxt">Nuxt.js</a>
+                                        <a className="footer__menu-item" href="#google">GoogleChrome/web.dev</a>
+                                        <a className="footer__menu-item" href="#rust">rust-lang-ru/rust-by-example</a>
+                                        <a className="footer__menu-item" href="#tensorflow">tensorflow/docs-l10n</a>
                                     </div>
                                 </div>
                                 <div className="footer__menu footer__company">
                                     <div className="footer__menu-title">Company</div>
                                     <div className="footer__menu-items">
                                         <a className="footer__menu-item" href="#about">About Us</a>
-                                        <a className="footer__menu-item" href="#terms">Terms of Service</a>
-                                        <a className="footer__menu-item" href="#privacy">Privacy Policy</a>
+                                        <a className="footer__menu-item" href="https://gitlocalize.com/terms">Terms of Service</a>
+                                        <a className="footer__menu-item" href="https://gitlocalize.com/privacy">Privacy Policy</a>
                                     </div>
 
                                     <div className="footer__menu-items">
-                                        <a className="footer__menu-item" href="#chat">Community Chat</a>
-                                        <a className="footer__menu-item" href="#contact">Contact Us</a>
+                                        <a className="footer__menu-item" href="https://gitter.im/gitlocalize/Lobby">Community Chat</a>
+                                        <a className="footer__menu-item" href="https://gitlocalize.com/inquiries/new">Contact Us</a>
                                     </div>
                                 </div>
                             </div>

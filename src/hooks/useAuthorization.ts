@@ -14,7 +14,7 @@ export const useAuthorization = () => {
 
     useEffect(() => {
         const AUTH_TOKEN_PROPERTY = 'auth_token';
-        const token = getCookie(AUTH_TOKEN_PROPERTY) || `eyJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjEwMzEsImlhdCI6MTY1ODgyNTA3MX0.rFTOSAKRyVPMUtg8SDp2qi4n0gaf11kJ_Z0hqt3u0e0`;
+        const token = getCookie(AUTH_TOKEN_PROPERTY);
 
         if (token) {
             setAuthenticated(true);
